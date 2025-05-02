@@ -11,7 +11,7 @@ data = pd.read_csv(URL)
 
 df = data
 
-st.image(logo.jpg)
+st.image("logo.jpg")
 st.title("Review do Marquito - Avaliações")
 
 restaurantes = df["Nome"].unique()
