@@ -11,7 +11,7 @@ data = pd.read_csv(URL)
 
 df = data
 
-st.logo("logo.jpg", size="medium", link="https://www.instagram.com/reviewdomarquito/", icon_image=None)
+st.logo("logo.jpg", size="large", link="https://www.instagram.com/reviewdomarquito/", icon_image=None)
 st.image("faces.png")
 st.title("Review do Marquito - Avaliações")
 
