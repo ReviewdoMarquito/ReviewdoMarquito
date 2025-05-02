@@ -11,6 +11,7 @@ data = pd.read_csv(URL)
 
 df = data
 
+st.image(logo.png)
 st.title("Review do Marquito - Avaliações")
 
 restaurantes = df["Nome"].unique()
@@ -21,9 +22,9 @@ df_restaurante = df[df["Nome"] == restaurante_selecionado]
 st.subheader("Detalhe da Avaliação")
 st.dataframe(df_restaurante)
 
-categorias = ["Agilidade", "Simpatia", "Organização", "Preparo", "Apresentação", 
-"Preço Justo?", "Destaque da Casa", "Clima (Música/Ruído)", 
-"Limpeza", "Estacionamento/Acessibilidade", "Porções Justas?", "Vale a pena voltar?"]
+categorias = ["Agilidade", "Simpatia", "Organização", "Sabor", "Preparo", "Apresentação", 
+"Cartela de Bebidas", "Preço Justo?", "Destaque da Casa", "Conforto", "Clima (Música/Ruído)", 
+"Limpeza", "Estacionamento/Acessibilidade", "Preço vs Qualidade", "Porções Justas?", "Vale a pena voltar?"]
 medias = df_restaurante[categorias].mean()
 
 fig = px.bar(
